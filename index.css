@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images/live-dinner\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body, p {
+    font-family: 'Open Sans';
+    color: #EAE0D5 !important;
+}
+
+body h1, h2, h3 {
+    font-family: 'Montserrat';
+    color:#D4A373 !important ;
+}
+
+button{
+    background-color: gold;
+ 
+}
+
+button:hover{
+    background-color: #bf8b63;
+    color: white;
+}
+
+.hero .cta-btn{
+    margin-left: 20%;
+    border-radius: 10px;
+}
+
+.hero{
+    margin: 10%;
+}
+
+
+/*carousel styling*/
+.carousel-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px){
+    .carousel-item img{
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+
+/* footer */
+footer .fa-brands{
+    font-size: 20px;
+    margin: 5px;
+    background-color: gold;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+footer .fa-brands:nth-child(1){
+    color: blue;
+}
+footer .fa-brands:nth-child(2){
+    color: rgb(234, 43, 75);
+}
+footer .fa-brands:nth-child(4){
+    color: red;
+}
+footer .fa-brands:nth-child(3){
+    color: blue;
+}
+
+footer .fa-brands:hover{
+    opacity: 0.2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
