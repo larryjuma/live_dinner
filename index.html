@@ -1,155 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Live Dinner</title>
-    <link rel="stylesheet" href="index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Live Dinner</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="#">Contact</a>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Dinner</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Live Dinner</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-summary">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu-summary">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#order-summary">Order</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservation-summary">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact-summary">Contact</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
+  <!-- Time and Greeting -->
+  <div class="getTime">
+    <div class="curr-time"></div>
+    <div class="greetings"></div>
+  </div>
 
-    <div class="hero">
-        <h2>Experience the Taste of Live Dinner</h2>
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <h2>Experience Culinary Excellence at Live Dinner</h2>
+    <p>Indulge in mouthwatering dishes, prepared with love and delivered straight to your door or served at our inviting table.</p>
+    <p>Your next delicious adventure begins here.</p>
+    <a href="#order-summary" class="btn btn-primary">Order Now</a>
+  </section>
 
-        <p>
-          Indulge in a fine dining experience with expertly crafted dishes made from
-          fresh ingredients.
-        </p>
+  <!-- About Section -->
+  <section id="about-summary" class="about-section">
+    <h3>About Us</h3>
+    <p>At Live Dinner, we blend culinary creativity with cozy ambiance. We’re more than a restaurant – we’re a community built around food, family, and fun.</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu-summary" class="menu-section">
+    <h3>Our Menu</h3>
+    <p>From sizzling starters to mouth-watering mains and decadent desserts, our menu is crafted to delight every palate.</p>
     
-        <button class="cta-btn">Order Now</button>
+    <div class="menu-cards-container">
+      <div class="menu-card">
+        <img src="meal1.jpg" alt="Dish 1">
+        <h4>Spaghetti Carbonara</h4>
+        <p>A classic Italian pasta with creamy sauce, crispy bacon, and parmesan.</p>
+        <a href="menu.html" class="btn btn-secondary">See More</a>
+      </div>
+      <div class="menu-card">
+        <img src="meal2.jpg" alt="Dish 2">
+        <h4>Margherita Pizza</h4>
+        <p>Delicious pizza topped with fresh mozzarella, basil, and a rich tomato sauce.</p>
+        <a href="menu.html" class="btn btn-secondary">See More</a>
+      </div>
+      <div class="menu-card">
+        <img src="meal3.jpg" alt="Dish 3">
+        <h4>Grilled Chicken Salad</h4>
+        <p>A fresh mix of greens, grilled chicken, avocado, and balsamic dressing.</p>
+        <a href="menu.html" class="btn btn-secondary">See More</a>
+      </div>
+      <div class="menu-card">
+        <img src="meal4.jpg" alt="Dish 4">
+        <h4>Chocolate Lava Cake</h4>
+        <p>A warm, gooey chocolate cake with a molten center, served with vanilla ice cream.</p>
+        <a href="menu.html" class="btn btn-secondary">See More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Section -->
+  <section id="order-summary" class="order-summary-section">
+    <h3>Order Your Meal</h3>
+    <p>Browse our menu, select your favorite dishes, and proceed with easy delivery or pick-up.</p>
+
+    <div class="meal-category">
+      <div class="meal-card">
+        <img src="starter1.jpg" alt="Starter 1">
+        <h5>Starter 1</h5>
+        <p>$5.99</p>
+        <button class="btn btn-primary">Add to Order</button>
+      </div>
+      <div class="meal-card">
+        <img src="starter2.jpg" alt="Starter 2">
+        <h5>Starter 2</h5>
+        <p>$6.99</p>
+        <button class="btn btn-primary">Add to Order</button>
+      </div>
+      <div class="meal-card">
+        <img src="starter3.jpg" alt="Starter 3">
+        <h5>Starter 3</h5>
+        <p>$7.99</p>
+        <button class="btn btn-primary">Add to Order</button>
+      </div>
     </div>
 
-
-    <h3>Signature Dishes</h3>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="images/best-burger-in-town.webp" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="images/colorful-bowl-of-deliciousness-with-fried-egg.png" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/pouring-honey-on-pancakes.webp" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <div class="order-summary">
+      <p>Total: $XX.XX</p>
+      <button class="btn btn-success">Proceed to Checkout</button>
     </div>
+  </section>
 
-    <h3>Why Dine With us?</h3>
+  <!-- Reservation Section -->
+  <section id="reservation-summary" class="reservation-section">
+    <h3>Book a Table</h3>
+    <p>Planning a special evening? Reserve your table with us today.</p>
+    <a href="#reservation-summary" class="btn btn-primary">Reserve Now</a>
+  </section>
 
-    <p>⭐ Authentic Taste – Made with fresh, local ingredients</p>
-    <p>🍷 Exquisite Ambience – Elegant interior & relaxing music</p>
+  <!-- Contact Section -->
+  <section id="contact-summary" class="contact-section">
+    <h3>Contact Us</h3>
+    <p>Have questions or feedback? Reach out by phone, email, or visit us in person.</p>
+    <a href="#contact-summary" class="btn btn-primary">Get in Touch</a>
+  </section>
 
-    <p>👨‍🍳 Top Chefs – Culinary experts with years of experience</p>
-    <p>🚀 Fast & Friendly Service – We prioritize your comfort</p>
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; <span id="fullYear"></span> Live Dinner. All Rights Reserved.</p>
+  </footer>
 
-    <footer>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-linkedin"></i>
-      <i class="fa-brands fa-youtube"></i>
-      <p>&copy; <span id="fullYear"></span> Live Dinner. All Rights Reserved.</p>
-    </footer>
-
-  
-    <script src="script.js" defer></script>
-  </body>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
